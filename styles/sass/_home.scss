@@ -1,0 +1,84 @@
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    // flex-flow: row;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    a {
+        float: left;
+        display: block;
+        color: #111111;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "Lato", Arial;
+        font-weight: 300;
+        &:hover {
+            color: #111111;
+            font-weight: 400;
+        }
+        &.active {
+            background-color: transparent;
+            color: #111111;
+            font-weight: 400;
+        }
+    }
+}
+
+.container {
+    max-width: 296px;
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+    @include media(tablet) {
+        max-width: 592px;
+        padding: 0;
+    }
+    @include media(desktopmini) {
+        max-width: 888px;
+    }
+    @include media(desktop) {
+        max-width: 1184px;
+    }
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@include media(mobile) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.logo {
+    display: flex !important;
+    flex-flow: row;
+    flex-grow: 1;
+    img {
+        width: 150px;
+    }
+}

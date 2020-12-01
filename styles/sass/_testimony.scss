@@ -1,0 +1,54 @@
+.testimony {
+    background-color: #A175FE;
+    padding-top: 96px;
+    padding-bottom: 92px;
+    h2 {
+        font-family: "Lato", Arial;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 48px;
+        font-size: 48px;
+        color: white;
+    }
+    &__content {
+        &__item {
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(163, 171, 204, 0.12);
+            border: 3px solid #F0F2FA;
+            border-radius: 16px;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            padding: 30px;
+            width: col(29, 32);
+            margin-left: col(3, 32);
+            margin-bottom: 32px;
+            img {
+                width: 80px !important;
+                height: 80px;
+                margin-right: col(2, 32);
+            }
+            &__text {
+                width: 100%;
+                padding-left: col(2, 32);
+                border-left: 3px solid #A175FE;
+                h3 {
+                    font-family: "Lato", Arial;
+                    font-size: 24px;
+                    margin-bottom: 32px;
+                }
+                h4 {
+                    font-family: "Lato", Arial;
+                    font-size: 16px;
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-family: "Lato", Arial;
+                    font-size: 12px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
